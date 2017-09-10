@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    //ประกาศตัวแปร
+    var numberAInt :Int = 1
     
     
     
@@ -22,21 +24,47 @@ class ViewController: UIViewController {
     
     
     @IBAction func decButton(_ sender: Any) {
-        print("คลิกขวา")
-        
+        print("คลิกซ้าย")
+        let ungClass = Myclass() // การสืบทอด class
+        numberAInt = ungClass.decNumber(intBumber: numberAInt)
+        numberLabel.text = String(numberAInt)
         
     }
     
     
     
     @IBAction func incButton(_ sender: Any) {
-        print("คลิกซ้าย")
+        print("คลิกขวา")
+
+        numberAInt = AddNumber(intNumber: numberAInt)
+        numberLabel.text = String(numberAInt)
+    }
+    
+    
+    @IBAction func refreshButton(_ sender: Any) {
+        numberAInt = refreshNumber()
+        numberLabel.text = String(numberAInt)
+        
+        
     }
     
     
     
     
+    
+    
+    //Function  Add Number
+    func AddNumber(intNumber:Int) -> Int {
+        let result = intNumber + 1
+        return result
+    }
+    func refreshNumber () -> Int {
+        let result = 1
+        return result
+    }
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

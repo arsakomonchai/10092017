@@ -18,6 +18,9 @@
 		6AF2218E1F64E10B00795F1F /* ic_save_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF2218B1F64E10B00795F1F /* ic_save_3x.png */; };
 		6AF2218F1F64E10B00795F1F /* ic_save.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF2218C1F64E10B00795F1F /* ic_save.png */; };
 		6AF221911F64E29700795F1F /* semenov-ivan-73912.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AF221901F64E29700795F1F /* semenov-ivan-73912.jpg */; };
+		6AF221931F64FAA700795F1F /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF221921F64FAA700795F1F /* MyClass.swift */; };
+		6AF221951F6509FC00795F1F /* if_firefox_54536.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF221941F6509FC00795F1F /* if_firefox_54536.png */; };
+		6AF221971F65102F00795F1F /* TimmerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF221961F65102F00795F1F /* TimmerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		6AF2218B1F64E10B00795F1F /* ic_save_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save_3x.png; sourceTree = "<group>"; };
 		6AF2218C1F64E10B00795F1F /* ic_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save.png; sourceTree = "<group>"; };
 		6AF221901F64E29700795F1F /* semenov-ivan-73912.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "semenov-ivan-73912.jpg"; sourceTree = "<group>"; };
+		6AF221921F64FAA700795F1F /* MyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		6AF221941F6509FC00795F1F /* if_firefox_54536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = if_firefox_54536.png; sourceTree = "<group>"; };
+		6AF221961F65102F00795F1F /* TimmerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimmerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		6AF221551F64DB0500795F1F /* FunnyNumber */ = {
 			isa = PBXGroup;
 			children = (
+				6AF221941F6509FC00795F1F /* if_firefox_54536.png */,
 				6AF221901F64E29700795F1F /* semenov-ivan-73912.jpg */,
 				6AF2218A1F64E10B00795F1F /* ic_save_2x.png */,
 				6AF2218B1F64E10B00795F1F /* ic_save_3x.png */,
@@ -115,6 +122,8 @@
 				6AF2215D1F64DB0500795F1F /* Assets.xcassets */,
 				6AF2215F1F64DB0500795F1F /* LaunchScreen.storyboard */,
 				6AF221621F64DB0500795F1F /* Info.plist */,
+				6AF221921F64FAA700795F1F /* MyClass.swift */,
+				6AF221961F65102F00795F1F /* TimmerViewController.swift */,
 			);
 			path = FunnyNumber;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 				6AF2215E1F64DB0500795F1F /* Assets.xcassets in Resources */,
 				6AF2218F1F64E10B00795F1F /* ic_save.png in Resources */,
 				6AF221911F64E29700795F1F /* semenov-ivan-73912.jpg in Resources */,
+				6AF221951F6509FC00795F1F /* if_firefox_54536.png in Resources */,
 				6AF2215C1F64DB0500795F1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +287,8 @@
 			files = (
 				6AF221591F64DB0500795F1F /* ViewController.swift in Sources */,
 				6AF221571F64DB0500795F1F /* AppDelegate.swift in Sources */,
+				6AF221971F65102F00795F1F /* TimmerViewController.swift in Sources */,
+				6AF221931F64FAA700795F1F /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +535,7 @@
 				6AF2217D1F64DB0500795F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AF2217E1F64DB0500795F1F /* Build configuration list for PBXNativeTarget "FunnyNumberTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +544,7 @@
 				6AF221801F64DB0500795F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AF221811F64DB0500795F1F /* Build configuration list for PBXNativeTarget "FunnyNumberUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +553,7 @@
 				6AF221831F64DB0500795F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
