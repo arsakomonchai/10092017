@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunnyNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pE5-Ho-O5c">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Funny Number" id="PHB-BG-Nj4">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="Jcv-6b-PKr">
+                                            <connections>
+                                                <action selector="decButton:" destination="BYZ-38-t0r" id="tug-jj-8f0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="RzP-Rr-yyF">
+                                            <connections>
+                                                <action selector="incButton:" destination="BYZ-38-t0r" id="Qno-8c-fMf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-Oi-xpz">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="2TT-r2-vBq"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="El8-rN-e6o"/>
+                                    <barButtonItem systemItem="refresh" id="RFp-to-lHC"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DY0-E0-yWh"/>
+                                    <barButtonItem image="ic_save_2x.png" id="vOT-of-ijx">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F80-x1-rS5">
+                                <rect key="frame" x="16" y="244" width="343" height="179.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="semenov-ivan-73912.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kbt-La-E5I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kbt-La-E5I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0le-uX-a2A"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bOE-Oi-xpz" secondAttribute="bottom" id="5Iy-J3-NLe"/>
+                            <constraint firstItem="bOE-Oi-xpz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8vv-ED-veZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kbt-La-E5I" secondAttribute="bottom" id="SII-sD-ypH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F80-x1-rS5" secondAttribute="trailing" id="SUO-4J-ck6"/>
+                            <constraint firstItem="F80-x1-rS5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZEW-SQ-CDX"/>
+                            <constraint firstItem="pE5-Ho-O5c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bxj-8Z-XjX"/>
+                            <constraint firstItem="Kbt-La-E5I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dan-Zd-lit"/>
+                            <constraint firstAttribute="trailing" secondItem="pE5-Ho-O5c" secondAttribute="trailing" id="hld-SO-l7x"/>
+                            <constraint firstItem="F80-x1-rS5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j38-EB-b4C"/>
+                            <constraint firstAttribute="trailing" secondItem="bOE-Oi-xpz" secondAttribute="trailing" id="jP4-IU-I9l"/>
+                            <constraint firstItem="F80-x1-rS5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="njy-hT-J47"/>
+                            <constraint firstAttribute="trailing" secondItem="Kbt-La-E5I" secondAttribute="trailing" id="sEp-gJ-Ucj"/>
+                            <constraint firstItem="pE5-Ho-O5c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wgb-wQ-cRv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="F80-x1-rS5" id="0bE-tV-RBl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="302" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_save_2x.png" width="48" height="48"/>
+        <image name="semenov-ivan-73912.jpg" width="4896" height="3264"/>
+    </resources>
 </document>

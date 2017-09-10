@@ -14,6 +14,10 @@
 		6AF221611F64DB0500795F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF2215F1F64DB0500795F1F /* LaunchScreen.storyboard */; };
 		6AF2216C1F64DB0500795F1F /* FunnyNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF2216B1F64DB0500795F1F /* FunnyNumberTests.swift */; };
 		6AF221771F64DB0500795F1F /* FunnyNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF221761F64DB0500795F1F /* FunnyNumberUITests.swift */; };
+		6AF2218D1F64E10B00795F1F /* ic_save_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF2218A1F64E10B00795F1F /* ic_save_2x.png */; };
+		6AF2218E1F64E10B00795F1F /* ic_save_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF2218B1F64E10B00795F1F /* ic_save_3x.png */; };
+		6AF2218F1F64E10B00795F1F /* ic_save.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF2218C1F64E10B00795F1F /* ic_save.png */; };
+		6AF221911F64E29700795F1F /* semenov-ivan-73912.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AF221901F64E29700795F1F /* semenov-ivan-73912.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		6AF221721F64DB0500795F1F /* FunnyNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunnyNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF221761F64DB0500795F1F /* FunnyNumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyNumberUITests.swift; sourceTree = "<group>"; };
 		6AF221781F64DB0500795F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF2218A1F64E10B00795F1F /* ic_save_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save_2x.png; sourceTree = "<group>"; };
+		6AF2218B1F64E10B00795F1F /* ic_save_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save_3x.png; sourceTree = "<group>"; };
+		6AF2218C1F64E10B00795F1F /* ic_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save.png; sourceTree = "<group>"; };
+		6AF221901F64E29700795F1F /* semenov-ivan-73912.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "semenov-ivan-73912.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 		6AF221551F64DB0500795F1F /* FunnyNumber */ = {
 			isa = PBXGroup;
 			children = (
+				6AF221901F64E29700795F1F /* semenov-ivan-73912.jpg */,
+				6AF2218A1F64E10B00795F1F /* ic_save_2x.png */,
+				6AF2218B1F64E10B00795F1F /* ic_save_3x.png */,
+				6AF2218C1F64E10B00795F1F /* ic_save.png */,
 				6AF221561F64DB0500795F1F /* AppDelegate.swift */,
 				6AF221581F64DB0500795F1F /* ViewController.swift */,
 				6AF2215A1F64DB0500795F1F /* Main.storyboard */,
@@ -232,8 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF2218E1F64E10B00795F1F /* ic_save_3x.png in Resources */,
+				6AF2218D1F64E10B00795F1F /* ic_save_2x.png in Resources */,
 				6AF221611F64DB0500795F1F /* LaunchScreen.storyboard in Resources */,
 				6AF2215E1F64DB0500795F1F /* Assets.xcassets in Resources */,
+				6AF2218F1F64E10B00795F1F /* ic_save.png in Resources */,
+				6AF221911F64E29700795F1F /* semenov-ivan-73912.jpg in Resources */,
 				6AF2215C1F64DB0500795F1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
